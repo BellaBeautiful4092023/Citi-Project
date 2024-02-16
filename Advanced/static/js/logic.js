@@ -1,6 +1,3 @@
-// let newYorkCoords = [40.73, -74.0059];
-// let mapZoomLevel = 12;
-
 // Create the tile layer that will be the background of our map.
 let streetmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -50,7 +47,7 @@ let info = L.control({
 
 // When the layer control is added, insert a div with the class of "legend".
 info.onAdd = function() {
-  var div = L.DomUtil.create("div", "legend");
+  let div = L.DomUtil.create("div", "legend");
   return div;
 };
 // Add the info legend to the map.
